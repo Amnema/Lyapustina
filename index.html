@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container" id="invisible_after_btn">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <div class="wrapper-inner">
+                <div class="offer">
+                    <h1 class="offer_title">С помощью нас вы сможете создать, то о чем</h1>
+                    <span class="offer_span">желаете!</span>
+                    <p class="offer_text  animate__animated animate__zoomIn animate__delay-1s">Наши возможности+ опыт позволят вам достичь
+                    огромного успеха. Мы верим в вас! И знаем это на
+                    все 100%. Вас не остановить!</p>
+                    <a href="#" class="btn1" onclick="invisible();" >Узнать больше...</a>
+                </div>
+                <img class="img1" src="img/header-img.png" alt="picture telephone">
+            </div>
+        </div>
+    </header>
+    <section class="info">
+        <div class="container">
+            <div class="question animate__animated animate__bounceInDown animate__delay-2s">
+                <h1>Что Вам необходимо?</h1>
+            </div>
+            <div class="blocks">
+                <div class="block" id="big_block1">
+                    <img class="img2" src="img/f3.png" alt="image">
+                    <h3>Первый блок</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="block" id="big_block2">
+                    <img class="img3" src="img/f4.png" alt="image">
+                    <h3>Второй блок</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="block" id="big_block3">
+                    <img class="img4" src="img/f5.png" alt="image">
+                    <h3>Третий блок</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forms">
+        <div class="container2">
+            <h2 class="form_order">Форма отправки заказа</h2>
+            <form class= "all_forms" action="" method="post" >
+                <div class="form" >
+                    <input type="text" id="name" name="client_name" placeholder ="Имя" onblur="checkName();" required />
+                    <span class="check" id="name_check"></span>
+                </div>
+                <div class="form">
+                    <input type="tel" id="tel" name="client_tel" placeholder="Введите номер телефона (xxx-xxx-xx-xx)" onblur="checkTel();" required />
+                    <span class="check" id="tel_check"></span>
+                </div>
+                <div class="form">
+                    <input type="text" id="address" name="client_address" placeholder="Адрес доставки (город, улица, дом) " onblur="checkAddress();" required />
+                    <span class="check" id="address_check"></span>
+                </div>
+                <div class="form">
+                    <input type="date" id="date" name="date_order" placeholder="Дата доставки" required /> 
+                </div>
+                <div class="form">
+                    <input type="time" id="time" name="time_order" placeholder="Время доставки" required /> 
+                </div>
+            </form>
+            <button class="btn2" type="button" onclick="outputData();">Оформить заказ!</button>
+            <h2 class="form_order">Форма заказа обратного звонка</h2>
+            <form class= "all_forms" action="#" method="post">
+                <div class="form">
+                    <input type="text" id="" name="client_name" placeholder ="Имя">
+                </div>
+                <div class="form">
+                    <input type="text" id="" name="client_e-mail" placeholder="Введите свой E-mail">
+                </div>
+                <div class="form">
+                    <input type="telephone" id="" name="client_tel" placeholder="Телефон">
+                </div>
+                <div class="form">
+                    <input type="text" id="" name="client_theme"
+                    placeholder="Какая тема Вас интересует?"> 
+                </div>
+            </form>
+            <button class="btn2" type="button">Отправить вопрос!</button>
+        </div>
+    </section>
+    <section class="end">
+        <div class="container3">
+        <p>© Все на этом сайте защищено</p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/javaScript.js" defer></script>
+</body>
+</html>
